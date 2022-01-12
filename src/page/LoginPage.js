@@ -1,13 +1,22 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import imageLogin from '../login.png'
-
+import imageLogin from '../login.png';
+import { BsFillEyeFill, BsFillEyeSlashFill } from "react-icons/bs";
 
 class LoginPage extends React.Component {
     constructor(props) {
         super(props);
         this.state = {
+            passType: "password",
+            passVisible: <BsFillEyeFill />
+        }
+    }
 
+    btnShowHide = () => {
+        if (this.state.passType == "password") {
+            this.setState({ passType: "text", passVisible: <BsFillEyeSlashFill /> })
+        } else {
+            this.setState({ passType: "password", passVisible: <BsFillEyeFill /> })
         }
     }
 
@@ -38,7 +47,10 @@ class LoginPage extends React.Component {
                         <div className="form-group py-3">
                             <label style={{ width: "100%", textAlign: "left" }} >Password</label>
                             <div className="input-group" >
-                                <input type="text" className="form-control" ref="password" />
+                                <input type={this.state.passType} className="form-control" ref="password" />
+                                <div className="input-group-append" >
+                                    <span className="input-group-text" style={{ cursor: "pointer", height: "100%" }} onClick={this.btnShowHide}>{this.state.passVisible}</span>
+                                </div>
                             </div>
                         </div>
                         <div className="py-3">Remember Me</div>
