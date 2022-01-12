@@ -11,11 +11,12 @@ class RegisterPage extends React.Component {
     }
 
     render() {
-        return <Redirect to="/" />
-    }
-    return (
+        return (
+            <div>
 
-    )
+            </div>
+        )
+    }
 }
 
 export default RegisterPage
