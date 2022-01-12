@@ -13,7 +13,7 @@ class RegisterPage extends React.Component {
     render() {
         return (
             <div>
-
+                <h2>Register page</h2>
             </div>
         )
     }
