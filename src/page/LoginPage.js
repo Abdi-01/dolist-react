@@ -27,10 +27,10 @@ class LoginPage extends React.Component {
             <div className="container pt-5">
                 <h1>Working Sign In</h1>
                 <div className="row pt-5">
-                    <div className="col-6">
+                    <div className="col-md-6 d-none d-md-block">
                         <img src={imageLogin} alt="login" style={{ width: "100%" }} />
                     </div>
-                    <div className="col-6">
+                    <div className="col-md-6">
                         <div className="form-group py-3">
                             <label style={{ width: "100%", textAlign: "left" }}>Name</label>
                             <input type="text" className="form-control" ref="name" />
