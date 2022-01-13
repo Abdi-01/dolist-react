@@ -3,7 +3,7 @@ import { SiFacebook, SiTwitter, SiLinkedin, SiGoogle, SiDribbble } from "react-i
 const FooterPage = (props) => {
 
     return (
-        <footer style={{ backgroundColor: "midnightblue", color:"white"}}>
+        <footer style={{ backgroundColor: "midnightblue", color:"white", position:"fixed", bottom:"0", left:"0", right:"0", paddingTop:"20px", padding:"20px"}}>
             <div class="container background-color">
                 <div class="row">
 
