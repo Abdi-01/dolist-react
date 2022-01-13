@@ -1,10 +1,10 @@
 import React from 'react';
-import {RiFacebookCircleFill} from 'react-icons'
+import { SiFacebook, SiTwitter, SiLinkedin, SiGoogle, SiDribbble } from "react-icons/si";
 const FooterPage = (props) => {
 
     return (
-        <footer style={{backgroundColor:"gray", }}>
-            <div  class="container background-color">
+        <footer style={{ backgroundColor: "midnightblue", color:"white"}}>
+            <div class="container background-color">
                 <div class="row">
 
                     <div class="col-md-4 mb-5 mb-lg-0">
@@ -17,27 +17,27 @@ const FooterPage = (props) => {
                         <ul class="list-inline mb-0">
                             <li class="list-inline-item">
                                 <a class="btn btn-outline-light btn-social text-center rounded-circle" href="#">
-                                <i class="bi bi-facebook"></i>
+                                    <i><SiFacebook /></i>
                                 </a>
                             </li>
                             <li class="list-inline-item">
                                 <a class="btn btn-outline-light btn-social text-center rounded-circle" href="#">
-                                <i class="bi bi-google"></i>
+                                    <i><SiGoogle /></i>
                                 </a>
                             </li>
                             <li class="list-inline-item">
                                 <a class="btn btn-outline-light btn-social text-center rounded-circle" href="#">
-                                <i class="bi bi-twitter"></i>
+                                    <i><SiTwitter /></i>
                                 </a>
                             </li>
                             <li class="list-inline-item">
                                 <a class="btn btn-outline-light btn-social text-center rounded-circle" href="#">
-                                <i class="bi bi-linkedin"></i>
+                                    <i><SiLinkedin /></i>
                                 </a>
                             </li>
                             <li class="list-inline-item">
                                 <a class="btn btn-outline-light btn-social text-center rounded-circle" href="#">
-                                <i class="bi bi-dribbble"></i>
+                                    <i><SiDribbble /></i>
                                 </a>
                             </li>
                         </ul>
@@ -52,8 +52,6 @@ const FooterPage = (props) => {
                 </div>
             </div>
         </footer >
-
-        
 
     )
 
